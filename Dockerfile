@@ -1,7 +1,4 @@
-
-
-
-
+FROM daocloud.io/phpimage/yii2-common:latest
 
 # Copy the working dir to the image's web root
 COPY . /var/www/html
