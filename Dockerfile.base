@@ -1,0 +1,10 @@
+#FROM codemix/yii2-base:2.0.11.2-php7-apache
+FROM codemix/yii2-base:2.0.11.2-php7-fpm
+#FROM codemix/yii2-base:2.0.11.2-hhvm
+
+# Composer packages are installed first. This will only add packages
+# that are not already in the yii2-base image.
+COPY composer.json /var/www/html/
+COPY composer.lock /var/www/html/
+RUN composer self-update --no-progress && \
+    composer install --no-progress
