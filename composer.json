@@ -18,7 +18,7 @@
         "callmez/yii2-wechat-sdk": "dev-master",
         "someet/common": "*@dev",
         "dektrium/yii2-user": "*@dev",
-        "dektrium/yii2-rbac": "master",
+        "dektrium/yii2-rbac": "*@dev",
         "yiisoft/yii2-redis": "*@dev",
         "e96/yii2-sentry": "dev-master",
         "yiisoft/yii2-authclient": "*@dev",

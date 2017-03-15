@@ -6,5 +6,11 @@ FROM codemix/yii2-base:2.0.11.2-php7-fpm
 # that are not already in the yii2-base image.
 COPY composer.json /var/www/html/
 COPY composer.lock /var/www/html/
-RUN composer self-update --no-progress && \
-    composer install --no-progress
+
+
+# Composer packages are installed first. This will only add packages
+RUN composer global require fxp/composer-asset-plugin:~1.1.3 --no-plugins  \
+    && composer self-update --no-progress \
+    && composer install --no-progress \
+    && mkdir -p runtime web/assets \
+    && chown www-data:www-data runtime web/assets
