@@ -16,7 +16,6 @@
 		"qiniu/php-sdk": "^7.0",
         "dcb9/yii2-yunpian": "^0.0.2",
         "callmez/yii2-wechat-sdk": "dev-master",
-        "someet/common": "*@dev",
         "dektrium/yii2-user": "*@dev",
         "dektrium/yii2-rbac": "*@dev",
         "yiisoft/yii2-redis": "*@dev",
